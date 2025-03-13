@@ -33,23 +33,6 @@ namespace Dobbel
 
         private void startButton_Click(object sender, RoutedEventArgs e)
         {
-            aantalWorpen++;
-
-            // handmatig klikken
-            if (worp != 6)
-            {
-                sb.AppendLine($"Worp {aantalWorpen.ToString()} is: {worp.ToString()}");
-                resultTextBox.Text = sb.ToString();
-                worp = rnd.Next(1, 7);
-            }
-            else
-            {
-                sb.AppendLine($"Worp {aantalWorpen.ToString()} is: {worp.ToString()}");
-                resultTextBox.Text = sb.ToString();
-            }
-        }
-        private void start2Button_Click(object sender, RoutedEventArgs e)
-        {
             // automatisch laten gooien tot 6 is bereikt
 
 
@@ -68,7 +51,7 @@ namespace Dobbel
                 resultTextBox.Text = sb.ToString();
             }
         }
-                     
+           
 
         
         private void againButton_Click(object sender, RoutedEventArgs e)
